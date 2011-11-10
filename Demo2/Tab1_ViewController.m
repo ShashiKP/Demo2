@@ -6,9 +6,9 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "Tab1_ViewController.h"
 
-@implementation ViewController
+@implementation Tab1_ViewController
 
 - (void)didReceiveMemoryWarning
 {
