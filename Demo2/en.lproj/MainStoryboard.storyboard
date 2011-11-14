@@ -137,6 +137,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="profile.png" id="GH5-Kh-f4W"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="WOu-Wo-mcU">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.46274513010000001" green="0.019607843829999999" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="vmU-VO-pFE" kind="relationship" relationship="rootViewController" id="ttR-Fm-Egv"/>
