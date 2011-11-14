@@ -19,44 +19,44 @@
     // Define our test data
     place= [NSMutableArray arrayWithObjects:
               @"C A", 
-             /* @"M", 
+              @"M", 
               @"D", 
               @"C", 
               @"J & S B S B",
               @"R S",
               @"C O",
-              @"J G",*/
+              @"J G",
               nil];
     detail = [NSMutableArray arrayWithObjects:
                     @"Chasing Amy film directed by Kevin Smith IMDB rating 7.2", 
-                    /* @"Mallrats film directed by Kevin Smith IMDB rating 7.1", 
+                    @"Mallrats film directed by Kevin Smith IMDB rating 7.1", 
                     @"Dogma film directed by Kevin Smith IMDB rating 6.9", 
                     @"Clerks film directed by Kevin Smith IMDB rating 6.7", 
                     @"Jay & Silent Bob Strike Back film directed by Kevin Smith IMDB rating 7.3",
                     @"Red State film directed by Kevin Smith IMDB rating 7.8",
                     @"Cop Out film directed by Kevin Smith IMDB rating 7.5",
-                    @"Jersey Girl film directed by Kevin Smith IMDB rating 6.2",*/
+                    @"Jersey Girl film directed by Kevin Smith IMDB rating 6.2",
                     nil];
    
     distance = [NSMutableArray arrayWithObjects:
                       @"2KM at:", 
-                      /* @"3KM at:", 
+                       @"3KM at:", 
                       @"2KM at:", 
                       @"1KM at:", 
                       @"5KM at:",
                       @"2KM at:",
                       @"3KM at:",
-                      @"1KM at:",*/
+                      @"1KM at:",
                       nil];
     username = [NSMutableArray arrayWithObjects:
                        @"Ronak", 
-                      /* @"Pravasis", 
+                       @"Pravasis", 
                        @"Chinmay", 
                        @"Bharat", 
                        @"Sairam",
                        @"Shashi",
                        @"Sameer",
-                       @"Prateek",*/
+                       @"Prateek",
                       nil]; 
     //chinmay idea
     
@@ -75,7 +75,7 @@
 // Return number of sections in table (always 1 for this demo!)
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 // Return the amount of items in our table (the total items in our array above)
