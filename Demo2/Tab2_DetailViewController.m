@@ -1,7 +1,13 @@
+//
+//  Tab2_DetailViewController.m
+//  Demo2
+//
+//  Created by jitu keshri on 11/8/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//
+
 #import "Tab2_DetailViewController.h"
 #import "Tab2_DetailItemViewController.h"
-//#import "Tab2_ItemViewController.h"
-//#import "Tab2_TableViewController.h"
 
 @implementation Tab2_DetailViewController
 
@@ -11,15 +17,15 @@
     [super viewDidLoad];
     
     // Define our test data
-    myData = [NSMutableArray arrayWithObjects:
-              @"Chasing Amy",
-              @"Mallrats",
-              @"Dogma",
-              @"Clerks",
-              @"Jay &amp; Silent Bob Strike Back",
-              @"Red State",
-              @"Cop Out",
-              @"Jersey Girl",
+    comment = [NSMutableArray arrayWithObjects:
+              @"C A detail view ", 
+              @"M detail view ", 
+              @"D detail view ", 
+              @"C detail view ", 
+              @"J & S B S B detail view ",
+              @"R S detail view ",
+              @"C Odetail view ",
+              @"J G detail view ",
               nil];
 }
 
@@ -32,7 +38,7 @@
 // Return the amount of items in our table (the total items in our array above)
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [myData count];
+    return [comment count];
 }
 
 // Return a cell for the table
@@ -47,12 +53,12 @@
         cell2 = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier2];
     }
     
-    // Get the cell label using its tag and set it
-    UILabel *cellLabel = (UILabel *)[cell2 viewWithTag:1];
-    [cellLabel setText:[myData objectAtIndex:indexPath.row]];
+    // Get the cell label using it's tag and set it
+    UILabel *cellLabel = (UILabel *)[cell2 viewWithTag:2];
+    [cellLabel setText:[comment objectAtIndex:indexPath.row]];
     
-    // get the cell imageview using its tag and set it
-    UIImageView *cellImage = (UIImageView *)[cell2 viewWithTag:2];
+    // get the cell imageview using it's tag and set it
+    UIImageView *cellImage = (UIImageView *)[cell2 viewWithTag:1];
     [cellImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", indexPath.row]]];
     
     return cell2;
@@ -62,28 +68,18 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Make sure we're referring to the correct segue
-    if ([[segue identifier] isEqualToString:@"ShowSelectedMovie"]) {
+    if ([[segue identifier] isEqualToString:@"ShowSelectedMovie2"]) {
         
         // Get reference to the destination view controller
         Tab2_DetailItemViewController *vc = [segue destinationViewController];
-//        Tab2_ItemViewController *vc2 = [segue destinationViewController];
         
         // get the selected index
         NSInteger selectedIndex = [[self.tableView indexPathForSelectedRow] row];
         
         // Pass the name and index of our film
-        [vc setSelectedItem:[NSString stringWithFormat:@"%@", [myData objectAtIndex:selectedIndex]]];
-        [vc setSelectedIndex:selectedIndex];
-        //directs the outputs on the viewcontroller to specific section Ex:label or image
-        
-//        [vc2 setLocation:[NSString stringWithFormat:@"%@", [place objectAtIndex:selectedIndex]]];
-//        [vc2 setSelectedIndex:selectedIndex];
-//        [vc2 setUsername:[NSString stringWithFormat:@"%@", [username objectAtIndex:selectedIndex]]];
-//        [vc2 setDistance:[NSString stringWithFormat:@"%@", [distance objectAtIndex:selectedIndex]]];
-//        [vc2 setDetailText:[NSString stringWithFormat:@"%@",[detail objectAtIndex: selectedIndex]]];
-
+        [vc setComment:[NSString stringWithFormat:@"%@", [comment objectAtIndex:selectedIndex]]];
+        [vc setCommentAvatar:selectedIndex];
     }
 }
-
 
 @end

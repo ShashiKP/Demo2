@@ -9,12 +9,26 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Demo2/Tab2_TableViewController.m"
-         timestampString = "343234686.796419"
+         timestampString = "342536404.382603"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "139"
-         endingLineNumber = "139"
+         startingLineNumber = "189"
+         endingLineNumber = "189"
          landmarkName = "@implementation Tab2_TableViewController"
+         landmarkType = "3">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Tab2_ItemViewController.m"
+         timestampString = "342536404.382603"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "194"
+         endingLineNumber = "194"
+         landmarkName = "@implementation Tab2_ItemViewController"
          landmarkType = "3">
       </FileBreakpoint>
    </FileBreakpoints>

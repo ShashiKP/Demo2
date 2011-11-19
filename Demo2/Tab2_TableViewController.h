@@ -9,7 +9,14 @@
 
 @interface Tab2_TableViewController : UITableViewController
 {
+    //defining an array
+    NSMutableArray *place;
+    NSMutableArray *detail;
+    NSMutableArray *distance;
+    NSMutableArray *commented;
+    NSMutableArray *username;
     NSMutableArray *myData;
+    
 }
 
 @end
