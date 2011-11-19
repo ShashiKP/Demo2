@@ -22,6 +22,13 @@
     IBOutlet UILabel *place;
     IBOutlet UILabel *comment;//chinmay idea
     IBOutlet UIImageView *outputImage;
+
+//    NSMutableArray *place_vc;
+//    NSMutableArray *detail_vc;
+//    NSMutableArray *distance_vc;
+//    NSMutableArray *commented_vc;
+//    NSMutableArray *username_vc;
+//    NSMutableArray *myData_vc;
 }
 
 @property (nonatomic) NSInteger selectedIndex;//image

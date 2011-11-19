@@ -36,6 +36,61 @@ NSString *detailText;
     [place setText:location];
     //chinmay idea
     [comment setText:commented];
+    
+    // Define our test data
+    place= [NSMutableArray arrayWithObjects:
+            @"C A", 
+            @"M", 
+            @"D", 
+            @"C", 
+            @"J & S B S B",
+            @"R S",
+            @"C O",
+            @"J G",
+            nil];
+    detail = [NSMutableArray arrayWithObjects:
+              @"Chasing Amy film directed by Kevin Smith IMDB rating 7.2", 
+              @"Mallrats film directed by Kevin Smith IMDB rating 7.1", 
+              @"Dogma film directed by Kevin Smith IMDB rating 6.9", 
+              @"Clerks film directed by Kevin Smith IMDB rating 6.7", 
+              @"Jay & Silent Bob Strike Back film directed by Kevin Smith IMDB rating 7.3",
+              @"Red State film directed by Kevin Smith IMDB rating 7.8",
+              @"Cop Out film directed by Kevin Smith IMDB rating 7.5",
+              @"Jersey Girl film directed by Kevin Smith IMDB rating 6.2",
+              nil];
+    
+    distance = [NSMutableArray arrayWithObjects:
+                @"2KM at:", 
+                @"3KM at:", 
+                @"2KM at:", 
+                @"1KM at:", 
+                @"5KM at:",
+                @"2KM at:",
+                @"3KM at:",
+                @"1KM at:",
+                nil];
+    username = [NSMutableArray arrayWithObjects:
+                @"Ronak", 
+                @"Pravasis", 
+                @"Chinmay", 
+                @"Bharat", 
+                @"Sairam",
+                @"Shashi",
+                @"Sameer",
+                @"Prateek",
+                nil]; 
+    //chinmay idea
+    
+    commented = [NSMutableArray arrayWithObjects:
+                 @"Ronak", 
+                 @"Pravasis", 
+                 @"Chinmay", 
+                 @"Bharat", 
+                 @"Sairam",
+                 @"Shashi",
+                 @"Sameer",
+                 @"Prateek",
+                 nil];
 }
 
 
@@ -121,21 +176,42 @@ NSString *detailText;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
     static NSString *CellIdentifier2 = @"Cell2";
+    //static NSString *CellIdentifier2 = @"Cell2";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];}
-        //************************ new View declaration***************
-        UITableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:CellIdentifier2];
-        if (cell2 == nil) {
-            cell2 = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier2];
-    }
+    UITableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:CellIdentifier2];
+    if (cell2 == nil) {
+        cell2= [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier2];}
+    
+    // Get the cell label using it's tag and set it
+    UILabel *cellLabel = (UILabel *)[cell2 viewWithTag:5];
+    [cellLabel setText:[place
+                        objectAtIndex:indexPath.row]];
+    
+    UILabel *cellLabel2 = (UILabel *)[cell2 viewWithTag:6];
+    [cellLabel2 setText:[detail objectAtIndex:indexPath.row]];
+    
+    UILabel *cellLabel3 = (UILabel *)[cell2 viewWithTag:4];
+    [cellLabel3 setText:[distance objectAtIndex:indexPath.row]];
+    
+//    UILabel *comment = (UILabel *)[cell2 viewWithTag:3];
+//    [comment_vc setText:[commented_vc  objectAtIndex:indexPath.row]]; 
+//    
+    
+    UILabel *cellLabel5 = (UILabel *)[cell2 viewWithTag:2];
+    [cellLabel5 setText:[username objectAtIndex:indexPath.row]];
+    
+    // get the cell imageview using it's tag and set it
+   
+    
+    UIImageView *cellImage2 = (UIImageView *)[cell2 viewWithTag:1];
+    [cellImage2 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", indexPath.row]]];
+    
+ 
     
     // Configure the cell...
     
-    return cell;
+    return cell2;
       
 }
 

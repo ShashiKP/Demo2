@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Tab2_TableViewController : UITableViewController
+<UITableViewDataSource, UITableViewDelegate>
 {
     //defining an array
     NSMutableArray *place;
