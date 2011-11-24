@@ -35,6 +35,7 @@
 		4A8B231414715393000E56AB /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B230C14715393000E56AB /* 5.jpg */; };
 		4A8B231514715393000E56AB /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B230D14715393000E56AB /* 6.jpg */; };
 		4A8B231614715393000E56AB /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B230E14715393000E56AB /* 7.jpg */; };
+		4AC74BB6147D1CAB002B7585 /* ImageFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC74BB5147D1CAB002B7585 /* ImageFloat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		4A8B230C14715393000E56AB /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = "../../../Downloads/TableImages-2/5.jpg"; sourceTree = "<group>"; };
 		4A8B230D14715393000E56AB /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6.jpg; path = "../../../Downloads/TableImages-2/6.jpg"; sourceTree = "<group>"; };
 		4A8B230E14715393000E56AB /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpg; path = "../../../Downloads/TableImages-2/7.jpg"; sourceTree = "<group>"; };
+		4AC74BB4147D1CAB002B7585 /* ImageFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFloat.h; sourceTree = "<group>"; };
+		4AC74BB5147D1CAB002B7585 /* ImageFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFloat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				4A47F9A1145AAB5000C9404F /* AppDelegate.h */,
 				4A47F9A2145AAB5000C9404F /* AppDelegate.m */,
 				4A47F9A4145AAB5000C9404F /* MainStoryboard.storyboard */,
+				4AC74BB4147D1CAB002B7585 /* ImageFloat.h */,
+				4AC74BB5147D1CAB002B7585 /* ImageFloat.m */,
 				4A7D03B414692F9C00A99675 /* Tab2_DetailViewController.h */,
 				4A7D03B514692F9C00A99675 /* Tab2_DetailViewController.m */,
 				4A7D03B0146923E700A99675 /* Tab2_DetailItemViewController.h */,
@@ -251,6 +256,7 @@
 				4A47F9CC145AB0F600C9404F /* Tab2_ItemViewController.m in Sources */,
 				4A7D03B2146923E700A99675 /* Tab2_DetailItemViewController.m in Sources */,
 				4A7D03B614692F9C00A99675 /* Tab2_DetailViewController.m in Sources */,
+				4AC74BB6147D1CAB002B7585 /* ImageFloat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_RESOURCE_RULES_PATH[sdk=*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo2/Demo2-Prefix.pch";
 				INFOPLIST_FILE = "Demo2/Demo2-Info.plist";
