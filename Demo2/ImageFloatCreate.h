@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImageFloat : UIViewController 
+@interface ImageFloatCreate : UIViewController 
 <UIImagePickerControllerDelegate , UINavigationControllerDelegate>
 
 {

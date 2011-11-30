@@ -95,6 +95,77 @@
             </objects>
             <point key="canvasLocation" x="1290" y="17"/>
         </scene>
+        <scene sceneID="KYR-5I-2Sb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzy-Ur-gI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="QlH-Eb-deM" customClass="ImageViewHome" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="104" sectionHeaderHeight="10" sectionFooterHeight="10" id="GKU-JE-610">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellIdentifier3" rowHeight="104" id="iQz-sV-hh4">
+                                <rect key="frame" x="0.0" y="46" width="320" height="106"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="300" height="103"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" id="Udm-Vk-VPF">
+                                            <rect key="frame" x="11" y="6" width="72" height="72"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" id="376-Id-27O">
+                                            <rect key="frame" x="114" y="6" width="72" height="72"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="RKF-25-Q1F">
+                                            <rect key="frame" x="6" y="80" width="86" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="w4j-ci-yKb">
+                                            <rect key="frame" x="107" y="80" width="86" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="gOf-BV-Dhj">
+                                            <rect key="frame" x="206" y="0.0" width="86" height="103"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" id="UGh-up-TxO">
+                                                    <rect key="frame" x="7" y="6" width="72" height="72"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="fzH-UY-Sqr">
+                                                    <rect key="frame" x="0.0" y="78" width="86" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.81681577620000001" green="0.58256678429999997" blue="0.90328881049999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QlH-Eb-deM" id="rhn-RB-3K7"/>
+                            <outlet property="delegate" destination="QlH-Eb-deM" id="8a8-g5-FQ7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="yzZ-vU-sL8"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1765" y="17"/>
+        </scene>
         <scene sceneID="49a-4V-Oam">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uot-zw-CVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -189,6 +260,9 @@
                                     <state key="highlighted">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="QlH-Eb-deM" kind="push" id="7yx-d4-bun"/>
+                                    </connections>
                                 </button>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Let's know whats happening here" minimumFontSize="10" id="t8w-lA-Hh4">
                                     <rect key="frame" x="7" y="64" width="293" height="31"/>
@@ -243,11 +317,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" id="0jT-xU-BCQ">
-                                            <rect key="frame" x="8" y="8" width="50" height="51"/>
+                                            <rect key="frame" x="8" y="10" width="54" height="54"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7co-1W-WRe">
-                                            <rect key="frame" x="238" y="21" width="34" height="23"/>
+                                            <rect key="frame" x="239" y="10" width="34" height="23"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -260,7 +334,7 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Btv-XJ-poP">
-                                            <rect key="frame" x="238" y="51" width="34" height="21"/>
+                                            <rect key="frame" x="239" y="44" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <state key="normal" image="132-ghost.png">
@@ -407,7 +481,7 @@
         <scene sceneID="tyh-Nw-6vX">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sme-RW-0Ig" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="idb-YV-0tn" customClass="ImageFloat" sceneMemberID="viewController">
+                <viewController id="idb-YV-0tn" customClass="ImageFloatCreate" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dO7-Rb-Ohx">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -454,12 +528,15 @@
         <image name="profile.png" width="30" height="30"/>
     </resources>
     <classes>
-        <class className="ImageFloat" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageFloat.h"/>
+        <class className="ImageFloatCreate" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageFloatCreate.h"/>
             <relationships>
                 <relationship kind="action" name="buttonClicked"/>
                 <relationship kind="outlet" name="selectedImage" candidateClass="UIImageView"/>
             </relationships>
+        </class>
+        <class className="ImageViewHome" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageViewHome.h"/>
         </class>
         <class className="Tab1_ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Tab1_ViewController.h"/>

@@ -6,9 +6,9 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ImageFloat.h"
+#import "ImageFloatCreate.h"
 
-@implementation ImageFloat
+@implementation ImageFloatCreate
 
 @synthesize selectedImage;
 
