@@ -210,6 +210,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.46274513010000001" green="0.019607843829999999" blue="0.062745101750000004" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="T38-ZZ-OJ3">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="vmU-VO-pFE" kind="relationship" relationship="rootViewController" id="ttR-Fm-Egv"/>
                     </connections>
@@ -220,12 +224,12 @@
         <scene sceneID="HJG-GP-cCF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j0C-w8-QKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController title="Text Float" id="vmU-VO-pFE" customClass="Tab2_TableViewController" sceneMemberID="viewController">
+                <tableViewController title="Text Float" hidesBottomBarWhenPushed="YES" id="vmU-VO-pFE" customClass="Tab2_TableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="73" sectionHeaderHeight="10" sectionFooterHeight="10" id="rTN-Tq-u9A">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.78823536630000002" green="0.82352948189999997" blue="0.87058830259999997" alpha="1" colorSpace="deviceRGB"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="BMX-2w-t9s">
+                        <view key="tableHeaderView" contentMode="top" id="BMX-2w-t9s">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
